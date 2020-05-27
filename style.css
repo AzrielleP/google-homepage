@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    color: #222222;
+}
+
+a{
+    text-decoration: none;
+    color: #222222;
+    -webkit-tap-highlight-color: transparent;
+}
+
+header{
+    font-size: 13px;
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+header a{
+    padding: 0.5rem;
+}
+
+main{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* 
+====================
+Customize the search bar 
+====================
+*/
+img{
+    margin: 2em;
+}
+
+form input{
+    height: 44px;
+    width: 25em;
+    padding: .5em .5em .5em 3em;
+    margin: 0 auto;
+    border-radius: 24px;
+    border: 1px solid #c8cbd1;
+    outline: none;
+    
+}
+
+/*Put the search icon inside the search bar*/
+.glass{
+    position: absolute;
+    padding: 14px;
+    min-width: 40px;
+}
+
+/*Customize the cancel button*/
+input::-webkit-search-cancel-button{
+    position: relative;
+    right: 10px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+/*
+===============
+Customize buttons
+===============
+*/
+
+.buttons{
+    display: flex;
+    margin: 2rem;
+}
+
+.buttons a{
+    background-color: #F2F2F2;
+    color: rgb(128, 129, 133);
+    border-radius: 3px;
+    margin: 0.5rem;
+    padding: 0.6rem;
+    height: 2.8rem;
+    display: flex;
+    align-items: center;
+}
+
+.buttons a:active{
+    color: #222222;
+    border: 0.5px solid #c8cbd1;
+}
+
+main p a{
+    color:#1a0dab;
+}
+
+main .country{
+    position: absolute;
+    bottom: 0;
+    background-color: #F2F2F2;
+    color: rgb(128, 129, 133);
+    width: 100%;
+    padding: 0.35rem;
+}
+
+/*Customize footer*/
+footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #F2F2F2;
+    border-top: 1px solid #c8cbd1;
+    color: rgb(128, 129, 133);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+
+}
+
+.first-links, .second-links{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+footer p{
+    padding: 1rem;
+
+}
