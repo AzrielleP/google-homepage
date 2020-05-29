@@ -1,56 +1,56 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    font-family: Arial;
-    font-weight: 400;
-    margin: 0;
-    padding: 0;
-    color: #222222;
-    font-size: 0.8em;
+body {
+  font-family: Arial;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  color: #222222;
+  font-size: 0.8em;
 }
 
-a{
-    text-decoration: none;
-    color: #222222;
-    -webkit-tap-highlight-color: transparent;
+a {
+  text-decoration: none;
+  color: #222222;
+  -webkit-tap-highlight-color: transparent;
 }
 
-header{
-    font-size: 13px;
-    padding: 0.5rem;
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
+header {
+  font-size: 13px;
+  padding: 0.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
 }
 
-header a{
-    padding: 0.5rem;
+header a {
+  padding: 0.5rem;
 }
 
-header a:active{
-    text-decoration: underline;
+header a:active {
+  text-decoration: underline;
 }
 
-header a .user{
-    font-size: 1.8em;
+header a .user {
+  font-size: 1.8em;
 }
 
-header a .grid{
-    font-size: 1.4em;
+header a .grid {
+  font-size: 1.4em;
 }
 
-main{
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+main {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 /* 
@@ -58,34 +58,33 @@ main{
 Customize the search bar 
 ====================
 */
-img{
-    margin: 2em;
+img {
+  margin: 2em;
 }
 
-form input{
-    height: 44px;
-    width: 90vw;
-    padding: .5em .5em .5em 3em;
-    margin: 0 auto;
-    border-radius: 24px;
-    border: 1px solid #c8cbd1;
-    outline: none;
-    
+form input {
+  height: 44px;
+  width: 90vw;
+  padding: 0.5em 0.5em 0.5em 3em;
+  margin: 0 auto;
+  border-radius: 24px;
+  border: 1px solid #c8cbd1;
+  outline: none;
 }
 
 /*Put the search icon inside the search bar*/
-.glass{
-    position: absolute;
-    padding: 17px;
-    min-width: 40px;
+.glass {
+  position: absolute;
+  padding: 17px;
+  min-width: 40px;
 }
 
 /*Customize the cancel button*/
-input::-webkit-search-cancel-button{
-    position: relative;
-    right: 10px;
-    cursor: pointer;
-    margin-left: 20px;
+input::-webkit-search-cancel-button {
+  position: relative;
+  right: 10px;
+  cursor: pointer;
+  margin-left: 20px;
 }
 
 /*
@@ -94,132 +93,131 @@ Customize buttons
 ===============
 */
 
-.buttons{
-    display: flex;
-    margin: 1.5rem;
+.buttons {
+  display: flex;
+  margin: 1.5rem;
 }
 
-.buttons a{
-    background-color: #F2F2F2;
-    color: rgb(109, 110, 116);
-    border-radius: 5px;
-    margin: 0.5rem;
-    padding: 0.6rem;
-    height: 2.8rem;
-    display: flex;
-    align-items: center;
+.buttons a {
+  background-color: #f2f2f2;
+  color: rgb(109, 110, 116);
+  border-radius: 5px;
+  margin: 0.5rem;
+  padding: 0.6rem;
+  height: 2.8rem;
 }
 
-.buttons a:active{
-    color: #222222;
-    border: 0.5px solid #c8cbd1;
+.buttons a:active {
+  color: #222222;
+  border: 0.5px solid #c8cbd1;
 }
 
-main p a{
-    color:#1a0dab;
+main p a {
+  color: #1a0dab;
 }
 
-main p a:active{
-    text-decoration: underline;
+main p a:active {
+  text-decoration: underline;
 }
 
-main .country{
-    position: absolute;
-    bottom: 0;
-    background-color: #F2F2F2;
-    color: #727A8B;
-    width: 100%;
-    padding: 0.35rem;
+main .country {
+  position: absolute;
+  bottom: 0;
+  background-color: #f2f2f2;
+  color: #727a8b;
+  width: 100%;
+  padding: 0.35rem;
 }
 
 /*Customize footer*/
-footer{
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    background-color: #F2F2F2;
-    border-top: 1px solid #E4E4E4;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column-reverse;
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column-reverse;
 }
 
-.first-links, .second-links{
-    display: flex;
-    flex-flow: row wrap;
+.first-links,
+.second-links {
+  display: flex;
+  flex-flow: row wrap;
 }
 
-footer a{
-    padding: 1rem;
-    color: #727A8B;
+footer a {
+  padding: 1rem;
+  color: #727a8b;
 }
 
-footer a:active{
+footer a:active {
+  color: #222222;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    height: 100vh;
+  }
+
+  header a:hover,
+  main p a:hover {
+    text-decoration: underline;
+  }
+
+  header .user {
+    font-size: 2em;
+  }
+
+  main .country {
+    position: absolute;
+    bottom: 42px;
+    font-size: 15px;
+    padding: 0.7em 2em;
+    border-top: 1px solid #e4e4e4;
+  }
+
+  form input {
+    width: 43vw;
+  }
+
+  form input:hover,
+  form input:focus {
+    outline: none;
+    box-shadow: 0px 3px 5px #c8cbd1;
+    border-color: #e4e4e4;
+  }
+
+  main .buttons a {
+    font-size: 14px;
+    height: 2.5em;
+  }
+  main .buttons a:hover {
     color: #222222;
+    border: 1px solid #c8cbd1;
+  }
+
+  footer {
+    font-size: 15px;
+    position: fixed;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 1em 0 1em;
+  }
+
+  footer a {
+    padding: 0.8em;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  footer a:active {
+    text-decoration: underline;
+    color: rgb(192, 66, 66);
+  }
 }
-
-@media screen and (min-width:768px){
-
-    .container{
-        height: 100vh;
-    }
-    
-    header a:hover, main p a:hover{
-        text-decoration: underline;
-    }
-
-    header .user{
-        font-size: 2em;
-    }
-
-    main .country{
-        position :absolute;
-        bottom: 42px;
-        font-size: 15px;
-        padding: 0.7em 2em;
-        border-top: 1px solid #E4E4E4;
-    }
-
-    form input{
-        width: 43vw;
-    }
-     
-    form input:hover, form input:focus{
-        outline: none;
-        box-shadow: 0px 3px 5px #c8cbd1;
-        border-color: #E4E4E4;
-    }
-
-    main .buttons a{
-        font-size: 14px;
-        height: 2.5em;
-    }
-    main .buttons a:hover{
-        color: #222222;
-        border: 1px solid #c8cbd1;
-    }
-
-    footer{
-        font-size: 15px;
-        position: fixed;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-        padding: 0 1em 0 1em;
-    }
-
-    footer a{
-        padding: 0.8em;
-    }
-
-    footer a:hover{
-        text-decoration: underline;
-    }
-
-    footer a:active{
-        text-decoration: underline;
-        color: rgb(192, 66, 66);
-    }
-}
-
