@@ -10,6 +10,7 @@ body{
     margin: 0;
     padding: 0;
     color: #222222;
+    font-size: 0.8em;
 }
 
 a{
@@ -20,14 +21,28 @@ a{
 
 header{
     font-size: 13px;
-    padding: 1rem;
+    padding: 0.5rem;
     position: absolute;
     top: 0;
     right: 0;
+    display: flex;
+    align-items: center;
 }
 
 header a{
     padding: 0.5rem;
+}
+
+header a:active{
+    text-decoration: underline;
+}
+
+header a .user{
+    font-size: 1.8em;
+}
+
+header a .grid{
+    font-size: 1.4em;
 }
 
 main{
@@ -49,7 +64,7 @@ img{
 
 form input{
     height: 44px;
-    width: 25em;
+    width: 90vw;
     padding: .5em .5em .5em 3em;
     margin: 0 auto;
     border-radius: 24px;
@@ -61,7 +76,7 @@ form input{
 /*Put the search icon inside the search bar*/
 .glass{
     position: absolute;
-    padding: 14px;
+    padding: 17px;
     min-width: 40px;
 }
 
@@ -81,13 +96,13 @@ Customize buttons
 
 .buttons{
     display: flex;
-    margin: 2rem;
+    margin: 1.5rem;
 }
 
 .buttons a{
     background-color: #F2F2F2;
-    color: rgb(128, 129, 133);
-    border-radius: 3px;
+    color: rgb(109, 110, 116);
+    border-radius: 5px;
     margin: 0.5rem;
     padding: 0.6rem;
     height: 2.8rem;
@@ -104,11 +119,15 @@ main p a{
     color:#1a0dab;
 }
 
+main p a:active{
+    text-decoration: underline;
+}
+
 main .country{
     position: absolute;
     bottom: 0;
     background-color: #F2F2F2;
-    color: rgb(128, 129, 133);
+    color: #727A8B;
     width: 100%;
     padding: 0.35rem;
 }
@@ -119,13 +138,11 @@ footer{
     bottom: 0;
     width: 100%;
     background-color: #F2F2F2;
-    border-top: 1px solid #c8cbd1;
-    color: rgb(128, 129, 133);
+    border-top: 1px solid #E4E4E4;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: column-reverse;
-
 }
 
 .first-links, .second-links{
@@ -133,7 +150,75 @@ footer{
     flex-flow: row wrap;
 }
 
-footer p{
+footer a{
     padding: 1rem;
-
+    color: #727A8B;
 }
+
+footer a:active{
+    color: #222222;
+}
+
+@media screen and (min-width:768px){
+
+    .container{
+        height: 100vh;
+    }
+    
+    header a:hover, main p a:hover{
+        text-decoration: underline;
+    }
+
+    header .user{
+        font-size: 2em;
+    }
+
+    main .country{
+        position :absolute;
+        bottom: 42px;
+        font-size: 15px;
+        padding: 0.7em 2em;
+        border-top: 1px solid #E4E4E4;
+    }
+
+    form input{
+        width: 43vw;
+    }
+     
+    form input:hover:focus{
+        outline: none;
+        box-shadow: 0px 0px 5px #E4E4E4;
+    }
+
+    main .buttons a{
+        font-size: 14px;
+        height: 2.5em;
+    }
+    main .buttons a:hover{
+        color: #222222;
+        border: 1px solid #c8cbd1;
+    }
+
+    footer{
+        font-size: 15px;
+        position: fixed;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0 1em 0 1em;
+    }
+
+    footer a{
+        padding: 0.8em;
+    }
+
+    footer a:hover{
+        text-decoration: underline;
+    }
+
+    footer a:active{
+        text-decoration: underline;
+        color: rgb(192, 66, 66);
+    }
+}
+
