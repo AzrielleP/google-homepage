@@ -105,6 +105,8 @@ Customize buttons
   margin: 0.5rem;
   padding: 0.6rem;
   height: 2.8rem;
+  display: flex;
+  align-items: center;
 }
 
 .buttons a:active {
@@ -126,7 +128,7 @@ main .country {
   background-color: #f2f2f2;
   color: #727a8b;
   width: 100%;
-  padding: 0.35rem;
+  padding: 0.4rem;
 }
 
 /*Customize footer*/
